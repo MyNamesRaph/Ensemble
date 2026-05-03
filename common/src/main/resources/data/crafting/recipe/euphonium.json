@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##=",
+    "PPP",
+    "P##"
+  ],
+  "key": {
+    "#": "minecraft:copper_block",
+    "=": "minecraft:iron_ingot",
+    "P": "minecraft:piston"
+  },
+  "result": {
+    "id": "ensemble:euphonium"
+  }
+}
