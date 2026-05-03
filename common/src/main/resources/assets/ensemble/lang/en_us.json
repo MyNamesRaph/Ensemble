@@ -1,0 +1,21 @@
+{
+  "itemGroup.ensemble.all": "Ensemble",
+  "item.ensemble.euphonium": "Euphonium",
+  "key.category.ensemble.keys_category":  "Ensemble",
+  "key.ensemble.a.octave_modifier": "Change Octave [WIP does not work!]",
+  "key.ensemble.b.do": "\u200CPlay note : C1",
+  "key.ensemble.c.re": "\u200C\u200CPlay note : D1",
+  "key.ensemble.d.mi": "\u200C\u200C\u200CPlay note : E1",
+  "key.ensemble.e.fa": "\u200C\u200C\u200C\u200CPlay note : F1",
+  "key.ensemble.f.sol": "\u200C\u200C\u200C\u200C\u200CPlay note : G1",
+  "key.ensemble.g.la": "\u200C\u200C\u200C\u200C\u200C\u200CPlay note : A1",
+  "key.ensemble.h.si": "\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : B1",
+  "key.ensemble.i.do_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : C2",
+  "key.ensemble.j.re_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : D2",
+  "key.ensemble.k.mi_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : E2",
+  "key.ensemble.l.fa_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : F2",
+  "key.ensemble.m.sol_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : G2",
+  "key.ensemble.n.la_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : A2",
+  "key.ensemble.o.si_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : B2",
+  "key.ensemble.p.do_higher": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : C3"
+}

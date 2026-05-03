@@ -1,0 +1,46 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/project/sword-of-legend",
+        "sources": "https://github.com/MyNamesRaph/TheSwordofLegend"
+    },
+    "license": "${license}",
+    "icon": "${mod_id}.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            {
+                "adapter": "kotlin",
+                "value": "com.mynamesraph.ensemble.EnsembleFabric"
+            }
+        ],
+        "client": [
+            {
+                "adapter": "kotlin",
+                "value": "com.mynamesraph.ensemble.EnsembleFabricClient"
+            }
+        ],
+        "fabric-datagen": [
+            "com.mynamesraph.ensemble.datagen.SOLDatagen"
+        ]
+    },
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=${fabric_loader_version}",
+        "fabric-api": "*",
+        "minecraft": "${minecraft_version}",
+        "java": ">=${java_version}",
+        "fabric-language-kotlin": ">=${flk_version}"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
+  

@@ -1,0 +1,43 @@
+[versions]
+java = "25"
+kotlin = "2.3.20"
+moddev = "2.0.141"
+loom = "1.16-SNAPSHOT"
+dokka = "1.9.20"
+
+minecraft = "26.1.2"
+minecraftRange = "[26.1, 27.1)"
+
+# The version of ParchmentMC that is used, see https://parchmentmc.org/docs/getting-started#choose-a-version for new versions
+parchment = "2025.07.20"
+parchmentMC = "1.21.8"
+
+neoforge = "26.1.2.5-beta"
+neoforgeRange = "[26.1, 27)"
+## This is the version of minecraft that the 'common' project uses, you can find a list of all versions here
+## https://projects.neoforged.net/neoforged/neoform
+neoForm = "26.2-snapshot-2-1"
+kff = "6.2.0"
+kffRange = "[6, )"
+
+fabricLoader = "0.18.6"
+fabricApi = "0.145.4+26.1.2"
+flk = "1.13.10+kotlin.2.3.20"
+
+mixin = "0.8.5"
+mixinExtras = "0.3.5"
+
+[libraries]
+minecraft = { group = "com.mojang", name = "minecraft", version.ref = "minecraft" }
+fabricLoader = { group = "net.fabricmc", name = "fabric-loader", version.ref = "fabricLoader" }
+fabricApi = { group = "net.fabricmc.fabric-api", name = "fabric-api", version.ref = "fabricApi" }
+flk = { group = "net.fabricmc", name = "fabric-language-kotlin", version.ref = "flk" }
+kff = { group = "thedarkcolour", name = "kotlinforforge-neoforge", version.ref = "kff" }
+mixin = { group = "org.spongepowered", name = "mixin", version.ref = "mixin" }
+mixinExtras-common = { group = "io.github.llamalad7", name = "mixinextras-common", version.ref = "mixinExtras" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+moddev = { id = "net.neoforged.moddev", version.ref = "moddev" }
+loom = { id = "net.fabricmc.fabric-loom", version.ref = "loom" }

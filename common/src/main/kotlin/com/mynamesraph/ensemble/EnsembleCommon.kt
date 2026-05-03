@@ -1,0 +1,29 @@
+package com.mynamesraph.ensemble
+
+import com.mynamesraph.ensemble.registry.CommonSounds
+import com.mynamesraph.ensemble.registry.EnsembleSounds
+import net.minecraft.client.KeyMapping
+import net.minecraft.client.Minecraft
+import net.minecraft.core.Registry
+import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.resources.Identifier
+import net.minecraft.sounds.SoundEvent
+
+
+// This class is part of the common project meaning it is shared between all supported loaders. Code written here can only
+// import and access the vanilla codebase, libraries used by vanilla, and optionally third party libraries that provide
+// common compatible binaries. This means common code can not directly use loader specific concepts such as Forge events
+// however it will be compatible with all supported mod loaders.
+object EnsembleCommon {
+    // The loader specific projects are able to import and use any code from the common project. This allows you to
+    // write the majority of your code here and load it from your loader specific projects. This example has some
+    // code that gets invoked by the entry point of the loader specific projects.
+
+    lateinit var ENSEMBLE_KEYS_CATEGORY : KeyMapping.Category;
+
+    fun init() {
+
+        CommonSounds
+
+    }
+}
