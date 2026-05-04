@@ -8,8 +8,8 @@
         "${mod_author}"
     ],
     "contact": {
-        "homepage": "https://modrinth.com/project/sword-of-legend",
-        "sources": "https://github.com/MyNamesRaph/TheSwordofLegend"
+        "homepage": "https://modrinth.com/mod/ensemble-mod",
+        "sources": "https://github.com/MyNamesRaph/Ensemble"
     },
     "license": "${license}",
     "icon": "${mod_id}.png",
