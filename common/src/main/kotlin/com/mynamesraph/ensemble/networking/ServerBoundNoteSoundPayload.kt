@@ -8,25 +8,25 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload
 import net.minecraft.resources.Identifier
 
 @JvmRecord
-data class NoteSoundPayload(val noteOrdinal: Byte, val playing: Boolean) : CustomPacketPayload {
+data class ServerBoundNoteSoundPayload(val noteOrdinal: Byte, val playing: Boolean) : CustomPacketPayload {
 
     override fun type(): CustomPacketPayload.Type<out CustomPacketPayload> = TYPE
 
 
     companion object {
-        val TYPE = CustomPacketPayload.Type<NoteSoundPayload>(
+        val TYPE = CustomPacketPayload.Type<ServerBoundNoteSoundPayload>(
             Identifier.fromNamespaceAndPath(
                 Constants.MOD_ID,
                 "note_payload"
             )
         )
 
-        val STREAM_CODEC: StreamCodec<ByteBuf, NoteSoundPayload> = StreamCodec.composite(
+        val STREAM_CODEC: StreamCodec<ByteBuf, ServerBoundNoteSoundPayload> = StreamCodec.composite(
             ByteBufCodecs.BYTE,
-            NoteSoundPayload::noteOrdinal,
+            ServerBoundNoteSoundPayload::noteOrdinal,
             ByteBufCodecs.BOOL,
-            NoteSoundPayload::playing,
-            ::NoteSoundPayload
+            ServerBoundNoteSoundPayload::playing,
+            ::ServerBoundNoteSoundPayload
         )
     }
 }

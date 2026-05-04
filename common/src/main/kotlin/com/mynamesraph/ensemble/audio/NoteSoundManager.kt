@@ -1,7 +1,7 @@
 package com.mynamesraph.ensemble.audio
 
 import com.mynamesraph.ensemble.Notes
-import com.mynamesraph.ensemble.networking.NoteSoundPayload
+import com.mynamesraph.ensemble.networking.ServerBoundNoteSoundPayload
 import com.mynamesraph.ensemble.platform.Services
 import com.mynamesraph.ensemble.registry.CommonSounds
 import com.mynamesraph.ensemble.registry.EnsembleSounds
@@ -50,7 +50,7 @@ class NoteSoundManager(player: LivingEntity) {
             if (instance != null) {
                 minecraft.soundManager.play(instance)
                 if (syncToServer) {
-                    Services.PLATFORM.sendServerboundPacket(NoteSoundPayload(note.ordinal.toByte(),true))
+                    Services.PLATFORM.sendServerboundPacket(ServerBoundNoteSoundPayload(note.ordinal.toByte(),true))
                 }
             }
         }
@@ -61,7 +61,7 @@ class NoteSoundManager(player: LivingEntity) {
             minecraft.soundManager.stop(soundInstances[soundSources[note]]!!)
             soundInstances.remove(soundSources[note])
             if (syncToServer) {
-                Services.PLATFORM.sendServerboundPacket(NoteSoundPayload(note.ordinal.toByte(),false))
+                Services.PLATFORM.sendServerboundPacket(ServerBoundNoteSoundPayload(note.ordinal.toByte(),false))
             }
         }
     }
