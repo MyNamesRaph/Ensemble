@@ -5,91 +5,91 @@ import com.mynamesraph.ensemble.registry.EnsembleKeyMappings
 enum class Notes(val keyMapping: EnsembleKeyMappings, val pitchValue: Int,val baseOctave: Int, val simpleNoteName : String) {
     DO(
         EnsembleKeyMappings.DO,
-        0,
+        12,
         1,
         "do"
     ),
     RE(
         EnsembleKeyMappings.RE,
-        2,
+        14,
         1,
         "re"
     ),
     MI(
         EnsembleKeyMappings.MI,
-        4,
+        16,
         1,
         "mi"
     ),
     FA(
         EnsembleKeyMappings.FA,
-        5,
+        17,
         1,
         "fa"
     ),
     SOL(
         EnsembleKeyMappings.SOL,
-        7,
+        19,
         1,
         "sol"
     ),
     LA(
         EnsembleKeyMappings.LA,
-        9,
+        21,
         1,
         "la"
     ),
     SI(
         EnsembleKeyMappings.SI,
-        11,
+        23,
         1,
         "si"
     ),
     DO_HIGH(
         EnsembleKeyMappings.DO_HIGH,
-        0,
+        12,
         2,
         "do"
     ),
     RE_HIGH(
         EnsembleKeyMappings.RE_HIGH,
-        2,
+        14,
         2,
         "re"
     ),
     MI_HIGH(
         EnsembleKeyMappings.MI_HIGH,
-        4,
+        16,
         2,
         "mi"
     ),
     FA_HIGH(
         EnsembleKeyMappings.FA_HIGH,
-        5,
+        17,
         2,
         "fa"
     ),
     SOL_HIGH(
         EnsembleKeyMappings.SOL_HIGH,
-        7,
+        19,
         2,
         "sol"
     ),
     LA_HIGH(
         EnsembleKeyMappings.LA_HIGH,
-        9,
+        21,
         2,
         "la"
     ),
     SI_HIGH(
         EnsembleKeyMappings.SI_HIGH,
-        11,
+        23,
         2,
         "si"
     ),
     DO_HIGHER(
         EnsembleKeyMappings.DO_HIGHER,
-        12,
+        24,
         2,
         "do"
     )
