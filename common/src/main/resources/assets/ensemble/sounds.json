@@ -1,6 +1,10 @@
 {
-  "euphonium": {
+  "euphonium_c2": {
     "subtitle": "sound.ensemble.euphonium_plays",
-    "sounds": ["ensemble:euphonium"]
+    "sounds": ["ensemble:euphonium_c2"]
+  },
+  "euphonium_c3": {
+    "subtitle": "sound.ensemble.euphonium_plays",
+    "sounds": ["ensemble:euphonium_c3"]
   }
 }

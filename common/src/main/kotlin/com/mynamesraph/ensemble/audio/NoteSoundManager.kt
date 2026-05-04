@@ -39,8 +39,11 @@ class NoteSoundManager(player: LivingEntity) {
         if (!soundInstances.contains(soundSources[note])) {
             soundInstances.put(
                 soundSources[note]!!,NoteSoundInstance(
-                    //TODO: Get soundEvent from item
-                    CommonSounds.map[EnsembleSounds.EUPHONIUM]!!,
+                    //TODO: Get the instrument to play from item
+                    if (note.baseOctave == 1)
+                        CommonSounds.map[EnsembleSounds.EUPHONIUM_C2]!!
+                    else
+                        CommonSounds.map[EnsembleSounds.EUPHONIUM_C3]!!,
                     soundSources[note]!!
                 )
             )

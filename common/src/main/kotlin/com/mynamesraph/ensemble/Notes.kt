@@ -2,80 +2,95 @@ package com.mynamesraph.ensemble
 
 import com.mynamesraph.ensemble.registry.EnsembleKeyMappings
 
-enum class Notes(val keyMapping: EnsembleKeyMappings, val pitchValue: Int,val simpleNoteName : String) {
+enum class Notes(val keyMapping: EnsembleKeyMappings, val pitchValue: Int,val baseOctave: Int, val simpleNoteName : String) {
     DO(
         EnsembleKeyMappings.DO,
         0,
+        1,
         "do"
     ),
     RE(
         EnsembleKeyMappings.RE,
+        2,
         1,
         "re"
     ),
     MI(
         EnsembleKeyMappings.MI,
-        2,
+        4,
+        1,
         "mi"
     ),
     FA(
         EnsembleKeyMappings.FA,
-        3,
+        5,
+        1,
         "fa"
     ),
     SOL(
         EnsembleKeyMappings.SOL,
-        4,
+        7,
+        1,
         "sol"
     ),
     LA(
         EnsembleKeyMappings.LA,
-        5,
+        9,
+        1,
         "la"
     ),
     SI(
         EnsembleKeyMappings.SI,
-        6,
+        11,
+        1,
         "si"
     ),
     DO_HIGH(
         EnsembleKeyMappings.DO_HIGH,
-        7,
+        0,
+        2,
         "do"
     ),
     RE_HIGH(
         EnsembleKeyMappings.RE_HIGH,
-        8,
+        2,
+        2,
         "re"
     ),
     MI_HIGH(
         EnsembleKeyMappings.MI_HIGH,
-        9,
+        4,
+        2,
         "mi"
     ),
     FA_HIGH(
         EnsembleKeyMappings.FA_HIGH,
-        10,
+        5,
+        2,
         "fa"
     ),
     SOL_HIGH(
         EnsembleKeyMappings.SOL_HIGH,
-        11,
+        7,
+        2,
         "sol"
     ),
     LA_HIGH(
         EnsembleKeyMappings.LA_HIGH,
-        12,
+        9,
+        2,
         "la"
     ),
     SI_HIGH(
         EnsembleKeyMappings.SI_HIGH,
-        13,
+        11,
+        2,
         "si"
     ),
     DO_HIGHER(
         EnsembleKeyMappings.DO_HIGHER,
-        14,
+        12,
+        2,
         "do"
     )
 
