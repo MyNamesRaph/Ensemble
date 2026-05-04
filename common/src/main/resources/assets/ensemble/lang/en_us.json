@@ -17,5 +17,6 @@
   "key.ensemble.m.sol_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : G2",
   "key.ensemble.n.la_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : A2",
   "key.ensemble.o.si_high": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : B2",
-  "key.ensemble.p.do_higher": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : C3"
+  "key.ensemble.p.do_higher": "\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200CPlay note : C3",
+  "sound.ensemble.euphonium_plays": "Euphonium plays"
 }
