@@ -22,6 +22,16 @@ class NoteSoundManager(player: LivingEntity) {
 
             return instances[player]!!
         }
+
+        fun clearForPlayer(player: LivingEntity) {
+            if (instances.contains(player)) {
+                for (note in Notes.entries) {
+                    val instance = instances[player]
+                    instance?.stopNote(note,false)
+                }
+                instances.remove(player)
+            }
+        }
     }
 
 

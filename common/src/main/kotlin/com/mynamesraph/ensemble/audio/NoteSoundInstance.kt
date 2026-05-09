@@ -1,6 +1,7 @@
 package com.mynamesraph.ensemble.audio
 
 import com.mojang.authlib.minecraft.client.MinecraftClient
+import com.mynamesraph.ensemble.Constants
 import net.minecraft.client.Minecraft
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance
 import net.minecraft.client.resources.sounds.SoundInstance
@@ -31,9 +32,9 @@ class NoteSoundInstance(
         val player = this.soundSource.player
         if (player.isRemoved || player.isDeadOrDying || !player.closerThan(player,70.0)) {
             this.stop()
+            NoteSoundManager.clearForPlayer(player)
             return
         }
-
         updatePosition()
     }
 
