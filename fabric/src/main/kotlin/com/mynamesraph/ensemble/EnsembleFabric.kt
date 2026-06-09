@@ -62,7 +62,6 @@ object EnsembleFabric : ModInitializer {
         for (player in players) {
             if (player.uuid == payload.player) {
                 sourcePlayer = player
-                Constants.LOG.info("SourcePlayer: ${player.name}")
             }
         }
 
